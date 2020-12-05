@@ -377,12 +377,18 @@ var height_scale = d3.scaleLinear()
 		  .style("font", "12px sans-serif")
 		  .attr("transform", "rotate(-90)")
 		 .text(result);
-		 
-		  g.append("g").append("text")
-		.attr("transform", "translate("+ width/2+","+(+height+40) +")")
+	  }
+	    g.append("g").append("text")
+		.attr("transform", "translate("+ width/2+","+(+height+32) +")")
 		  .attr("fill", "red")
 		  .style("font", "18px sans-serif")
 		.text("Years");
+		
+		 g.append("g").append("text")
+		.attr("transform", "translate("+ (margin.left-30)+","+(+height+50) +")")
+		  .attr("fill", "#000")
+		  .style("font", "18px sans-serif")
+		.text("Total Funds Democrats received from sports teams over years");
 		
 		g.append("g").append("text")
 		  .attr("fill", "red")
@@ -391,7 +397,6 @@ var height_scale = d3.scaleLinear()
 		  .attr("x", (-height/2)-10)
 		  .style("font", "18px sans-serif")
 		.text("Percentage");
-	  }
 }
 
 function graph_republicans()
@@ -543,12 +548,19 @@ function graph_republicans()
 		  .style("font", "12px sans-serif")
 		  .attr("transform", "rotate(-90)")
 		 .text(result);
-		 
-		 g.append("g").append("text")
-		.attr("transform", "translate("+ width/2+","+(+height+40) +")")
+	  }
+	  
+	  g.append("g").append("text")
+		.attr("transform", "translate("+ width/2+","+(+height+32) +")")
 		  .attr("fill", "red")
 		  .style("font", "18px sans-serif")
 		.text("Years");
+		
+		 g.append("g").append("text")
+		.attr("transform", "translate("+ (margin.left-60)+","+(+height+50) +")")
+		  .attr("fill", "#000")
+		  .style("font", "18px sans-serif")
+		.text("Total Funds Republicans received from sports teams over years");
 		
 		g.append("g").append("text")
 		  .attr("fill", "red")
@@ -557,7 +569,6 @@ function graph_republicans()
 		  .attr("x", (-height/2)-10)
 		  .style("font", "18px sans-serif")
 		.text("Percentage");
-	  }
 }
 
 function legend()
