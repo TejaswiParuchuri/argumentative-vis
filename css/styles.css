@@ -1,0 +1,37 @@
+
+
+.graph1 {
+  border:2px solid red;
+  border-radius:10px;
+  margin:5px;
+}
+
+.graph2 {
+  border:2px solid red;
+  border-radius:10px;
+  margin:5px;
+}
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+h2, h3 {
+  text-align:center;
+}
+
+
+
+
+div.label-map {
+     position: absolute;
+     text-align: center;
+     padding: .5rem;
+     background: #FFFFFF;
+     color: #313639;
+     border: 1px solid #313639;
+     border-radius: 8px;
+     font-size: 1.3rem;
+}
